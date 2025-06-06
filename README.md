@@ -6,14 +6,15 @@ This repository provides a simple template for a web application using **Nuxt.js
 
 - `frontend` - Nuxt 3 application
 - `backend` - Nest application with Prisma
-- `package.json` - npm workspaces configuration (monorepo)
+- `pnpm-workspace.yaml` - pnpm workspace configuration (monorepo)
 - `docker-compose.yml` - launches frontend, backend and PostgreSQL services
 
 ## Usage
 
-Install dependencies for both apps from the repository root:
+Enable pnpm via Corepack and install dependencies from the repository root:
 ```bash
-npm install
+corepack enable
+pnpm install
 ```
 
 Then build and start all services:
