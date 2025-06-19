@@ -1,0 +1,10 @@
+{
+  "name": "webapp-monorepo",
+  "private": true,
+  "packageManager": "pnpm@10.5.2",
+  "scripts": {
+    "dev:frontend": "pnpm --filter frontend dev",
+    "dev:backend": "pnpm --filter backend start:dev",
+    "build": "pnpm --filter frontend build && pnpm --filter backend build"
+  }
+}
